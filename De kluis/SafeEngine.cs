@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -24,8 +25,18 @@ namespace De_kluis
 
         public SafeEngine(int lenght, string pinCode)
         {
-            pinLenght = lenght;
-            secretPin = pinCode;
+            Regex regex = new Regex("^[0-9]+$");
+
+            if (regex.IsMatch(pinCode))
+            {
+                pinLenght = lenght;
+                secretPin = pinCode;
+            }
+            else
+            {
+                pinLenght = 4;
+                secretPin = "0000";
+            }
         }
 
         public string getDisplayText()
@@ -54,15 +65,30 @@ namespace De_kluis
             }
         }
 
-        public void numberPressed(char number)
+        public void numberPressed(KeyPressEventArgs e)
         {
-            if (enteredPin.Length == pinLenght)
+            if (char.IsDigit(e.KeyChar))
             {
-                return;
+                e.Handled = true;
+                if (enteredPin.Length == pinLenght)
+                {
+                    return;
+                }
+                else
+                {
+                    enteredPin += e.KeyChar;
+                }
+
+                
+            }
+            else if (e.KeyChar == (char)Keys.Back)
+            {
+                backspacePress();
             }
             else
             {
-                enteredPin += number;
+                e.Handled = true;
+                return;
             }
         }
 

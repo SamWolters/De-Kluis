@@ -40,22 +40,8 @@ namespace De_kluis
         private void txtPincode_KeyPress(object sender, KeyPressEventArgs e)
         {
             //e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
-            if (char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-
-                safeEngine.numberPressed(e.KeyChar);
-                txtPincode.Text = safeEngine.getDisplayText();
-            }
-            else if (e.KeyChar == (char)Keys.Back)
-            {
-                txtPincode.Text = safeEngine.backspacePress();
-            }
-            else
-            {
-                e.Handled = true;
-                return;
-            }
+            safeEngine.numberPressed(e);
+            txtPincode.Text = safeEngine.getDisplayText();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
