@@ -8,3 +8,14 @@ C:\Users\swolt\source\repos\De kluis\De kluis\obj\Release\De kluis.csproj.Genera
 C:\Users\swolt\source\repos\De kluis\De kluis\obj\Release\De kluis.csproj.CoreCompileInputs.cache
 C:\Users\swolt\source\repos\De kluis\De kluis\obj\Release\De kluis.exe
 C:\Users\swolt\source\repos\De kluis\De kluis\obj\Release\De kluis.pdb
+C:\Users\swolt\Documents\Astrum College\Programmeren\De-Kluis\De kluis\bin\Release\De kluis.exe.config
+C:\Users\swolt\Documents\Astrum College\Programmeren\De-Kluis\De kluis\bin\Release\De kluis.exe
+C:\Users\swolt\Documents\Astrum College\Programmeren\De-Kluis\De kluis\bin\Release\De kluis.pdb
+C:\Users\swolt\Documents\Astrum College\Programmeren\De-Kluis\De kluis\obj\Release\De kluis.csprojAssemblyReference.cache
+C:\Users\swolt\Documents\Astrum College\Programmeren\De-Kluis\De kluis\obj\Release\De_kluis.Form1.resources
+C:\Users\swolt\Documents\Astrum College\Programmeren\De-Kluis\De kluis\obj\Release\De_kluis.Form2.resources
+C:\Users\swolt\Documents\Astrum College\Programmeren\De-Kluis\De kluis\obj\Release\De_kluis.Properties.Resources.resources
+C:\Users\swolt\Documents\Astrum College\Programmeren\De-Kluis\De kluis\obj\Release\De kluis.csproj.GenerateResource.cache
+C:\Users\swolt\Documents\Astrum College\Programmeren\De-Kluis\De kluis\obj\Release\De kluis.csproj.CoreCompileInputs.cache
+C:\Users\swolt\Documents\Astrum College\Programmeren\De-Kluis\De kluis\obj\Release\De kluis.exe
+C:\Users\swolt\Documents\Astrum College\Programmeren\De-Kluis\De kluis\obj\Release\De kluis.pdb

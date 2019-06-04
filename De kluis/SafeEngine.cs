@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -96,6 +98,7 @@ namespace De_kluis
         {
             if (enteredPin == secretPin)
             {
+                playSound();
                 statusOpen = true;
                 MessageBox.Show("Kluis open");
             }
@@ -143,6 +146,15 @@ namespace De_kluis
             }
 
             return getDisplayText();
+        }
+
+        public void playSound()
+        {
+            Stream stream = Properties.Resources.Peter_Griffin___Tada_YXJdw0v9ZMk;
+
+            SoundPlayer soundPlayer = new SoundPlayer(stream);
+
+            soundPlayer.Play();
         }
     }
 }
