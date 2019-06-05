@@ -35,13 +35,15 @@ namespace De_kluis
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show(safeEngine.getDisplayText());
+
+            txtOutput.Text = safeEngine.getDisplayText();
         }
 
         private void txtPincode_KeyPress(object sender, KeyPressEventArgs e)
         {
             //e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
             safeEngine.numberPressed(e);
-            txtPincode.Text = safeEngine.getDisplayText();
+            txtOutput.Text = safeEngine.getDisplayText();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -65,6 +67,8 @@ namespace De_kluis
                 txtPincode.Text = safeEngine.getDisplayText();
             }
             testDialog.Dispose();
+
+            
         }
 
         private void btnStatus_Click(object sender, EventArgs e)

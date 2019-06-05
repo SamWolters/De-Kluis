@@ -35,6 +35,7 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnChange = new System.Windows.Forms.Button();
             this.btnStatus = new System.Windows.Forms.Button();
+            this.txtOutput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtPincode
@@ -107,11 +108,21 @@
             this.btnStatus.UseVisualStyleBackColor = true;
             this.btnStatus.Click += new System.EventHandler(this.btnStatus_Click);
             // 
+            // txtOutput
+            // 
+            this.txtOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOutput.Location = new System.Drawing.Point(116, 218);
+            this.txtOutput.Name = "txtOutput";
+            this.txtOutput.ReadOnly = true;
+            this.txtOutput.Size = new System.Drawing.Size(188, 28);
+            this.txtOutput.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(485, 261);
+            this.Controls.Add(this.txtOutput);
             this.Controls.Add(this.btnStatus);
             this.Controls.Add(this.btnChange);
             this.Controls.Add(this.btnClear);
@@ -135,6 +146,7 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnChange;
         private System.Windows.Forms.Button btnStatus;
+        private System.Windows.Forms.TextBox txtOutput;
     }
 }
 

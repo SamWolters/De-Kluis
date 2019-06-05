@@ -69,7 +69,7 @@ namespace De_kluis
         {
             if (char.IsDigit(e.KeyChar))
             {
-                e.Handled = true;
+                e.Handled = false;
                 if (enteredPin.Length == pinLenght)
                 {
                     return;
@@ -78,8 +78,6 @@ namespace De_kluis
                 {
                     enteredPin += e.KeyChar;
                 }
-
-                
             }
             else if (e.KeyChar == (char)Keys.Back)
             {
@@ -87,7 +85,7 @@ namespace De_kluis
             }
             else
             {
-                e.Handled = true;
+                e.Handled = false;
                 return;
             }
         }
