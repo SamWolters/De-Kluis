@@ -95,7 +95,7 @@ namespace De_kluis
         }
 
         public void Open()
-        {
+        {+
             if (enteredPin == secretPin)
             {
                 playSound();
